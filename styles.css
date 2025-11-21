@@ -132,9 +132,9 @@ nav {
     max-width: 448px;
     height: 68px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-end;
-    align-items: end;
+    align-items: center;
     position: relative;
     border-radius: 500px;
 }

@@ -26,10 +26,20 @@ body {
     font-weight: 700;
     padding: 10px 32px;
     border: none;
+    cursor: pointer;
 }
 
 .purple {
     color: #6415ff;
+}
+
+p {
+    font-weight: 600;
+    color: #7c8ba1;
+    line-height: 1.5;
+    font-size: 18px;
+
+
 }
 
 /* Nav Bar */
@@ -182,7 +192,6 @@ nav {
     width: 100%;
     max-width: 320px;
     margin: 16px 0 0;
-    padding: ;
     opacity: .5;
 }
 
@@ -216,6 +225,7 @@ nav {
 .features__title {
     font-size: 48px;
     margin: 16px 0;
+    font-weight: 900;
 }
 
 .features__para {
@@ -253,8 +263,68 @@ nav {
 }
 
 .feature__service--para {
-    color: #7c8ba1;
     margin: 16px 0 0 0;
-    line-height: 1.5;
     max-width: calc(634 / 3);
+}
+
+/* Quality */
+
+.quality__container {
+
+    width: 100%;
+    max-width: 1200px;
+    padding: 50px 64px;
+}
+
+.quality__row {
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.quality__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 32px;
+}
+
+.quality__title {
+    margin: 16px 0;
+    font-weight: 900;
+}
+
+.quality__img--wrapper {
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 4px;
+    margin: 0 56px;
+    z-index: 2;
+    display: flex;
+    position: relative;
+}
+.quality__img {
+    width: 100%;
+    margin: 16px 0;
+    z-index: 1;
+}
+
+.quality__btn {
+    margin: 32px 0 0;
+    padding: 12px 32px;
+    width: 160px;
+}
+
+.quality__grid {
+    transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    fill: rgb(100, 21, 255);
+    --tw-text-opacity: 1;
+    color: rgba(100, 21, 255, var(--tw-text-opacity));
+    z-index: 0;
+    display: block;
 }

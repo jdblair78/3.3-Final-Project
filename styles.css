@@ -15,7 +15,8 @@ html {
 body {
     width: 100%;
     max-width: 1200px;
-    padding: 0 32px
+    padding: 0 32px;
+    margin: 0 auto;
 }
 
 .btn {
@@ -280,7 +281,6 @@ nav {
     display: flex;
     flex: row;
     justify-content: center;
-    align-items: center;
 }
 
 .quality__description {
@@ -327,4 +327,70 @@ nav {
     color: rgba(100, 21, 255, var(--tw-text-opacity));
     z-index: 0;
     display: block;
+}
+
+/* STEPS */
+
+.steps__container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 90px 0;
+}
+
+.steps__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.steps__description {
+    width: 50%;
+}
+
+.steps__title {
+    font-size: 48px;
+    margin: 16px 0;
+    font-weight: 900;
+    line-height: 1.5;
+    color: rgb(36, 62, 99);
+}
+
+.step__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 32px;
+}
+
+.step__number {
+    font-size: 36px;
+    color: #cbd5e0;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.step__description {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 0 0 0 24px;
+}
+
+.step__title {
+    font-size: 20px;
+    color: #243e63;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.step__para {
+    font-size: 14px;
+    color: #718096;
+    line-height: 2;
+    font-weight: 500px;
+
 }

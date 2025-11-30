@@ -59,6 +59,8 @@ main {
     max-width: 576px;
 }
 
+
+
 .btn {
     background-color: #6415ff;
     color: white;
@@ -79,9 +81,67 @@ p {
     color: #7c8ba1;
     line-height: 1.5;
     font-size: 18px;
+}
 
+.btn__menu {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    text-align: center;
+    color: #7342d6;
+    display: none;
+}
+
+.menu__backdrop  {
+    position: absolute;
+    background-color: #242424;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms ease;
+    visibility: hidden;
+    opacity: 0;
 
 }
+
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu--open {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__list {
+    padding: 32px 0;
+}
+
+.menu__link {
+    color: white;
+    font-size: 48px;
+}
+
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: white;
+}
+
 
 /* Nav Bar */
 
@@ -206,7 +266,7 @@ header .row {
 }
 
 .header__email--btn {
-    position: absolute;
+    position: relative;
     z-index: 2;
     margin: 8px;
     font-size: 16px;
@@ -1271,8 +1331,8 @@ footer {
         }
 
         .header__email {
-            display: flex;
             flex-direction: column;
+            height: auto;
         }
 
         .header__email--input {

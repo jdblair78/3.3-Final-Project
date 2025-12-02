@@ -16,8 +16,9 @@ main {
     margin-bottom: 80px;
 }
 
-#section {
-    padding: 0 2rem;
+section {
+    display: flex;
+    justify-content: center;
 }
 
 .container {
@@ -146,6 +147,7 @@ p {
 /* Nav Bar */
 
 nav {
+    width: 1280px;
     padding-top: 32px;
 }
 
@@ -216,16 +218,105 @@ nav {
 
 }
 
-/* Header */
-
-section {
-    padding: 0 2rem;
+.login {
+  margin-left: 48px;
 }
 
-header .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.btn {
+  background-color: #6415ff;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 500px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.btn__menu {
+  background-color: transparent;
+  border: none;
+  display: none;
+  transition: all 300ms ease;
+}
+
+.btn__menu--svg:hover {
+  filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg)
+    brightness(94%) contrast(115%);
+}
+
+.btn__menu--close {
+  position: fixed;
+  top: 24px;
+  right: 18px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 378px;
+  margin: 24px 16px;
+  padding: 32px;
+  background-color: #fff;
+  border: 1px solid rgb(229, 231, 235);
+  border-radius: 8px;
+  z-index: 4;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(300%);
+  transition: all 300ms ease;
+}
+
+.menu--open {
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+
+.menu--open .menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.menu__links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__link {
+  color: #1a202c;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 8px 0;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.menu__link--primary {
+  color: #f7fafc;
+  padding: 12px 32px;
+  background: #6415ff;
+  border-radius: 500px;
+  border: none;
+}
+
+.btn__menu--close {
+  position: fixed;
+  top: 24px;
+  right: 18px;
+}
+
+/* Header */
+
+.header {
+
 }
 
 .header__description {

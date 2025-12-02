@@ -305,6 +305,7 @@ nav {
   background: #6415ff;
   border-radius: 500px;
   border: none;
+  text-decoration: none;
 }
 
 .btn__menu--close {

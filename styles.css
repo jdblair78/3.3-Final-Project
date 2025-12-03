@@ -1194,6 +1194,11 @@ footer {
 }
 
 @media (max-width: 1024px) {
+    
+    .container {
+        margin: 0 2rem;
+    }
+    
     .nav__links {
         display: none;
     }
@@ -1336,6 +1341,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    #header .row {
+        flex-direction: column;
+    }
+    
     .features {
         justify-content: center;
     }
